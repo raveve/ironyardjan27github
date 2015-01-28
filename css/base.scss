@@ -22,13 +22,15 @@ header {
     margin-left: 15%;
     margin-right: 15%;
   }
-  ul {
-    list-style-type: none;
-  }
-  li {
-    display: inline;
-    padding: 5px;
-  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 5px;
 }
 
 aside {
@@ -41,7 +43,7 @@ aside {
   }
 }
 
-.main-photo, .info {
+.main-photo, .info, .follow {
   border-bottom: 1px solid $light-gray;
 }
 
@@ -49,6 +51,10 @@ section {
   width: 50%;
   display: inline-block;
   margin-right: 15%;
+}
+
+article {
+  display: inline-block;
 }
 
 h2 {

@@ -14,11 +14,13 @@ header {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%; }
-  header ul {
-    list-style-type: none; }
-  header li {
-    display: inline;
-    padding: 5px; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  display: inline;
+  padding: 5px; }
 
 aside {
   width: 15%;
@@ -28,13 +30,16 @@ aside {
     border-radius: 5%;
     width: 100%; }
 
-.main-photo, .info {
+.main-photo, .info, .follow {
   border-bottom: 1px solid #F5F5F5; }
 
 section {
   width: 50%;
   display: inline-block;
   margin-right: 15%; }
+
+article {
+  display: inline-block; }
 
 h2 {
   color: #4183C4; }

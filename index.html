@@ -23,7 +23,7 @@
   </header>
   <aside>
     <div class="main-photo">
-    <img src=" http://fillmurray.com/200/200" alt="">
+    <img src="http://fillmurray.com/200/200" alt="">
       <h1>Name Here</h1>
       <p>Username Here</p>
     </div>
@@ -32,11 +32,43 @@
       <p><a href=""><span class="octicon octicon-link"></span> URL</a></p>
       <p><span class="octicon octicon-clock"></span> Joined on Month Day, Year</p>
     </div>
+    <div class="follow">
+      <a href=""><h2>#</h2><p>Followers</p></a>
+      <a href=""><h2>#</h2><p>Starred</p></a>
+      <a href=""><h2>#</h2><p>Following</p></a>
+    </div>
+    <div class="orgs">
+      <h3>Organizations</h3>
+    </div>
   </aside>
-  <section></section>
+  <section>
+    <article>
+      <a href=""><span class="octicon octicon-repo"></span> Repositories</a>
+      <form>
+        <input type="search" name="repo-search" value="Find a repository...">
+        <button><h3>Search</h3></button>
+        <ul>
+          <li><a href=""><h3>All</h3></a></li>
+          <li><a href=""><h3>Public</h3></a></li>
+          <li><a href=""><h3>Private</h3></a></li>
+          <li><a href=""><h3>Sources</h3></a></li>
+          <li><a href=""><h3>Forks</h3></a></li>
+          <li><a href=""><h3>Mirrors</h3></a></li>
+        </ul>
+        <button><h3><span class="octicon octicon-repo"></span> New</h3></button>
+      </form>
+    </article>
+    <article>
+      <a href=""><span class="octicon octicon-rss"></span> Public Activity</a>
+    </article>
+    <article>
+      <button><span class="octicon octicon-pencil"></span><h3>Edit profile</h3></button>
+    </article>
+  </section>
 
 
   <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
   <script src="userinfo.js"></script>
   <script src="repos.js"></script>
   <script src="events.js"></script>
