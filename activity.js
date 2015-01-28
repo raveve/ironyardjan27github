@@ -1,4 +1,4 @@
-var events = [
+var = [
 {
   "id": "2537624790",
   "type": "CreateEvent",

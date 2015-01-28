@@ -11,7 +11,7 @@
     <div>
       <span class="mega-octicon octicon-mark-github"></span>
       <form>
-        <input type="search" name="github-search" value="Search GitHub">
+        <input type="search" name="github-search" value="Search GitHub" class="main-search">
       </form>
       <ul>
         <li><a href="">Explore</a></li>
@@ -43,10 +43,14 @@
   </aside>
   <section>
     <article>
-      <a href=""><span class="octicon octicon-repo"></span> Repositories</a>
-      <form>
-        <input type="search" name="repo-search" value="Find a repository...">
-        <button><h3>Search</h3></button>
+      <a href="" class="repo-border"><span class="octicon octicon-repo"></span> Repositories</a>
+      <a href="" class="pub-act-border"><span class="octicon octicon-rss"></span> Public Activity</a>
+      <button><span class="octicon octicon-pencil"></span><h3>Edit profile</h3></button>
+      <div class="repo-header">
+        <form>
+          <input type="search" name="repo-search" value="Find a repository..." class="find-repo">
+          <button><h3>Search</h3></button>
+        </form>
         <ul>
           <li><a href=""><h3>All</h3></a></li>
           <li><a href=""><h3>Public</h3></a></li>
@@ -54,15 +58,11 @@
           <li><a href=""><h3>Sources</h3></a></li>
           <li><a href=""><h3>Forks</h3></a></li>
           <li><a href=""><h3>Mirrors</h3></a></li>
+          <li><a href=""><button class="new-repo"><h3><span class="octicon octicon-repo"></span> New</h3></button></a></li>
         </ul>
-        <button><h3><span class="octicon octicon-repo"></span> New</h3></button>
-      </form>
+      </div>
     </article>
-    <article>
-      <a href=""><span class="octicon octicon-rss"></span> Public Activity</a>
-    </article>
-    <article>
-      <button><span class="octicon octicon-pencil"></span><h3>Edit profile</h3></button>
+    <article class="public-activity">
     </article>
   </section>
 

@@ -1,0 +1,1 @@
+userInfo.avatar_url

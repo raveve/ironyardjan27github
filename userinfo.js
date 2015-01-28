@@ -1,4 +1,4 @@
-{
+var userInfo = {
   "login": "raveve",
   "id": 8239281,
   "avatar_url": "https://avatars.githubusercontent.com/u/8239281?v=3",
