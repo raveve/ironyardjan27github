@@ -1,4 +1,5 @@
-var userInfo = {
+var userInfo = [
+{
   "login": "raveve",
   "id": 8239281,
   "avatar_url": "https://avatars.githubusercontent.com/u/8239281?v=3",
@@ -30,3 +31,4 @@ var userInfo = {
   "created_at": "2014-07-22T20:40:23Z",
   "updated_at": "2015-01-26T21:51:44Z"
 }
+];
