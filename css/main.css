@@ -37,8 +37,10 @@ li {
 
 aside {
   width: 15%;
-  display: inline-block;
-  margin-left: 15%; }
+  display: block;
+  float: left;
+  margin-left: 15%;
+  margin-right: 2%; }
   aside img {
     border-radius: 5%;
     width: 100%; }
@@ -49,7 +51,10 @@ aside {
 section {
   width: 60%;
   display: inline-block;
-  margin-right: 2%; }
+  margin-top: 15px; }
+  section p {
+    color: #AAAAAA;
+    font-size: 14px; }
 
 .find-repo {
   width: 250px; }
@@ -68,7 +73,7 @@ article {
   border-left: 1px solid #AAAAAA;
   padding: 10px; }
 
-.pub-act-border, .repo-header {
+.pub-act-border, .repo-header, .repo-post {
   border-bottom: 1px solid #AAAAAA;
   padding: 10px; }
 

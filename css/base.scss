@@ -54,8 +54,10 @@ li {
 
 aside {
   width: 15%;
-  display: inline-block;
+  display: block;
+  float: left;
   margin-left: 15%;
+  margin-right: 2%;
   img {
     border-radius: 5%;
     width: 100%;
@@ -69,7 +71,11 @@ aside {
 section {
   width: 60%;
   display: inline-block;
-  margin-right: 2%;
+  margin-top: 15px;
+  p {
+    color: $mid-gray;
+    font-size: 14px;
+  }
 }
 
 .find-repo {
@@ -92,7 +98,7 @@ article {
   padding: 10px;
 }
 
-.pub-act-border, .repo-header {
+.pub-act-border, .repo-header, .repo-post {
   border-bottom: 1px solid $mid-gray;
   padding: 10px;
 }

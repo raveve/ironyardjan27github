@@ -15,17 +15,20 @@ templates.userProfile = [
 '<a href=""><h2><%= userInfo.followers %></h2><p>Followers</p></a>',
 '<a href=""><h2><%= "4" %></h2><p>Starred</p></a>',
 '<a href=""><h2><%= userInfo.following %></h2><p>Following</p></a>',
-'</div>'
+'</div>',
+'<div class="orgs"><h3>Organizations</h3></div>'
 ].join('');
 
 
 templates.repo = [
-'<div class=repoPost>',
+'<div class=repo-post>',
 '<ul>',
 '<li><h2><%= name %></h2></li>',
 '<li><%= language %></li>',
 '<li><span class="octicon octicon-star"></span><%= stargazers_count %></li>',
 '<li><span class="octicon octicon-git-branch"></span><%= forks %></li>',
 '</ul>',
+'<p><%= description %></p>',
+'<p><%= updated_at %></p>',
 '</div>'
 ].join("");
