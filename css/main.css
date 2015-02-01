@@ -114,3 +114,6 @@ p {
 .follow a {
   display: inline-block;
   padding-left: 15px; }
+
+.hide {
+  display: none; }

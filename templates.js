@@ -2,26 +2,26 @@ var templates = {};
 
 templates.userProfile = [
 '<div class="main-photo">',
-'<img src = <%= userInfo.avatar_url %>',
-'<h1><%= userInfo.name %></h1>',
-'<p><%= userInfo.login %></p>',
+'<img src = <%= avatar_url %>',
+'<h1><%= name %></h1>',
+'<p><%= login %></p>',
 '</div>',
 '<div class="info">',
-'<p><span class="octicon octicon-location"></span><%= userInfo.location %></p>',
-'<p><a href=""><span class="octicon octicon-link"></span><%= userInfo.blog %></a></p>',
-'<p><span class="octicon octicon-clock"></span><%= userInfo.created_at %></p>',
+'<p><span class="octicon octicon-location"></span><%= location %></p>',
+'<p><a href=""><span class="octicon octicon-link"></span><%= blog %></a></p>',
+'<p><span class="octicon octicon-clock"></span><%= created_at %></p>',
 '</div>',
 '<div class="follow">',
-'<a href=""><h2><%= userInfo.followers %></h2><p>Followers</p></a>',
+'<a href=""><h2><%= followers %></h2><p>Followers</p></a>',
 '<a href=""><h2><%= "4" %></h2><p>Starred</p></a>',
-'<a href=""><h2><%= userInfo.following %></h2><p>Following</p></a>',
+'<a href=""><h2><%= following %></h2><p>Following</p></a>',
 '</div>',
 '<div class="orgs"><h3>Organizations</h3></div>'
 ].join('');
 
 
-templates.repo = [
-'<div class=repo-post>',
+templates.userRepo = [
+'<div class="repo-post">',
 '<ul>',
 '<li><h2><%= name %></h2></li>',
 '<li><%= language %></li>',
@@ -31,4 +31,18 @@ templates.repo = [
 '<p><%= description %></p>',
 '<p><%= updated_at %></p>',
 '</div>'
+].join("");
+
+templates.userPushed = [
+'<div class="push-post">',
+
+
+].join("");
+
+templates.userBranch = [
+'<div class="branch-post">'
+].join("");
+
+templates.userRepoEvent = [
+'<div class="repo-event-post">'
 ].join("");
