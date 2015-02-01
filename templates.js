@@ -35,8 +35,16 @@ templates.userRepo = [
 
 templates.userPushed = [
 '<div class="push-post">',
-
-
+'<p><%= element.public %></p>',
+'<a href=""><h3><%= element.actor.login %></h3></a>',
+'<h3><%= pushed to %></h3>',
+'<a href=""><h3><%= element.payload.master_branch %></h3></a>',
+'<h3><%= at %></h3>',
+'<a href="<%= element.payload.url %>"><h3><%= element.repo.name %></h3></a>',
+'<img src = <%= element.actor.avatar_url %>',
+'<img class="tiny-img" src = <%= element.actor.avatar_url %>',
+'<a href="<%=  %>"><h3><%= element.payload.push_id %></h3></a>',
+'<p><%= element.payload.message %></p>'
 ].join("");
 
 templates.userBranch = [
