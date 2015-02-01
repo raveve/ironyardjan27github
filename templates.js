@@ -51,8 +51,8 @@ templates.userPushed = [
 templates.userCreate = [
 '<div class="create-post">',
 '<p><span class="octicon octicon-repo"></p>',
-'<p><%= element.created_at %></p>',
 '<a href=""><p><%= element.actor.login %></p></a>',
 '<p>created Repository</p>',
-'<a href="<%= element.rep.url %>"><p><%= element.repo.name %></p></a>'
+'<a href="<%= element.rep.url %>"><p><%= element.repo.name %></p></a>',
+'<p><%= element.created_at %></p>',
 ].join("");
