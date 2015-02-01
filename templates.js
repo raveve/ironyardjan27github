@@ -35,7 +35,8 @@ templates.userRepo = [
 
 templates.userPushed = [
 '<div class="push-post">',
-'<p><%= element.public %></p>',
+'<div><span class="octicon octicon-git-commit"></span></div>',
+'<p><%= element.created_at %></p>',
 '<a href=""><h3><%= element.actor.login %></h3></a>',
 '<h3><%= pushed to %></h3>',
 '<a href=""><h3><%= element.payload.master_branch %></h3></a>',
@@ -47,10 +48,11 @@ templates.userPushed = [
 '<p><%= element.payload.message %></p>'
 ].join("");
 
-templates.userBranch = [
-'<div class="branch-post">'
-].join("");
-
-templates.userRepoEvent = [
-'<div class="repo-event-post">'
+templates.userCreate = [
+'<div class="create-post">',
+'<p><span class="octicon octicon-repo"></p>',
+'<p><%= element.created_at %></p>',
+'<a href=""><p><%= element.actor.login %></p></a>',
+'<p>created Repository</p>',
+'<a href="<%= element.rep.url %>"><p><%= element.repo.name %></p></a>'
 ].join("");
